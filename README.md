@@ -3,7 +3,7 @@
 Flow matching has recently emerged as a powerful paradigm for generative modeling and has been extended to probabilistic time series forecasting in latent spaces. However, the impact of the specific choice of probability path model on forecasting performance remains under-explored. In this work, we demonstrate that forecasting spatio-temporal data with flow matching is highly sensitive to the selection of the probability path model. Motivated by this insight, we propose a novel probability path model designed to improve forecasting performance. Our empirical results across various dynamical system benchmarks show that our model achieves faster convergence during training and improved predictive performance compared to existing probability path models. Importantly, our approach is efficient during inference, requiring only a few sampling steps. This makes our proposed model practical for real-world applications and opens new avenues for probabilistic forecasting.
 
 
-This repository contains the official implementation of the methods and experiments described in the TMLR paper. The arxiv version is available [here](https://arxiv.org/abs/2410.03229).
+This repository contains the official implementation of the methods and experiments described in the TMLR paper (the arxiv version is available [here](https://arxiv.org/abs/2410.03229)).
 
 ### **Setup**
 
