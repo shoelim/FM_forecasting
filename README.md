@@ -4,7 +4,7 @@ This repository contains the official implementation of the methods and experime
 
 ### **Setup**
 
-First, build the container that installs all required packages listed in `requirements.txt`:
+First, build the container image from `ours.def` (installs packages from `requirements.txt`):
 ```
 apptainer build ours.sif ours.def
 ```
