@@ -6,7 +6,6 @@ Flow matching has recently emerged as a powerful paradigm for generative modelin
   <img src="assets/simple_fluid_flow_example.gif"/>
 </p>
 
-
 This repository contains the official implementation of the methods and experiments described in the TMLR paper (the arxiv version is available [here](https://arxiv.org/abs/2410.03229)). For a standalone demonstration that applies a simplified version of the method to different tasks, see this [notebook](https://colab.research.google.com/drive/1SfB1VnHLU8nxq5qLQYb4bbOPzZ2XLm0E?usp=sharing).
 
 ## **Setup**
@@ -16,8 +15,8 @@ First, build the container image from `ours.def` (installs packages from `requir
 apptainer build ours.sif ours.def
 ```
 
-## **Running Examples**
-Once you have created the directories for checkpoints and results, you can then run the provided simple examples inside the container:
+## **Running Example**
+Once you have created the directories for checkpoints and results, you can then run the provided simple example inside the container:
 
 ```
 apptainer exec ours.sif python train_ae.py \
@@ -47,6 +46,7 @@ apptainer exec ours.sif python train.py \
   --save-plots \
   --save-gif
 ```
+After the run completes, the video shown earlier will be available in the results directory.
 
 ## Access to Datasets 
 The dataset for the simple fluid flow task is included in this repository. The other datasets are provided by [PDEBench](https://github.com/pdebench/PDEBench) and can be downloaded from their official repository.
