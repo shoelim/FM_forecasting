@@ -28,7 +28,7 @@ apptainer exec ours.sif python train_ae.py \
 
 ```
 apptainer exec ours.sif python train.py \
-  --run-name github_simpleflow_ours_sigma0.1_samplingsteps10_rk4_separate \
+  --run-name github_simpleflow_ours_sigma0.01_samplingsteps10_rk4_separate \
   --dataset simpleflow \
   --train_option separate \
   --probpath_option ours \
@@ -39,7 +39,9 @@ apptainer exec ours.sif python train.py \
   --snapshots-per-sample 25 \
   --snapshots-to-generate 20 \
   --path_to_ae_checkpoints checkpoints/ \
-  --path_to_results results/
+  --path_to_results results/ \
+  --save-plots \
+  --save-gif
 ```
 
 ### Access to Datasets 
