@@ -46,7 +46,7 @@ apptainer exec ours.sif python train.py \
   --save-plots \
   --save-gif
 ```
-After the run completes, the video shown earlier will be available as a GIF file in the results directory.
+After the run completes, the animations shown earlier will be available as a GIF file in the results directory.
 
 ## Access to Datasets 
 The dataset for the simple fluid flow task is included in this repository. The other datasets are provided by [PDEBench](https://github.com/pdebench/PDEBench) and can be downloaded from their official repository.
